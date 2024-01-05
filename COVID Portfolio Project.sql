@@ -13,7 +13,7 @@ ORDER BY 1, 2
 -- Likelihood of dying if you contract covid in a country
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
 FROM PortfolioProject..CovidDeaths
-WHERE location = 'Poland' AND continent <> ''
+WHERE location = 'Poland'
 ORDER BY 1, 2
 
 -- Total Cases vs Population
